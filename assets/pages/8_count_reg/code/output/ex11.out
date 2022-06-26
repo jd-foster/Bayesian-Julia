@@ -1,0 +1,104 @@
+TaskFailedException
+
+    nested task error: TaskFailedException
+    
+        nested task error: DomainError with 0.0:
+        NegativeBinomial: the condition zero(p) < p <= one(p) is not satisfied.
+        Stacktrace:
+          [1] #134
+            @ ~/.julia/packages/Distributions/O5xl5/src/univariate/discrete/negativebinomial.jl:41 [inlined]
+          [2] check_args
+            @ ~/.julia/packages/Distributions/O5xl5/src/utils.jl:89 [inlined]
+          [3] #NegativeBinomial#133
+            @ ~/.julia/packages/Distributions/O5xl5/src/univariate/discrete/negativebinomial.jl:41 [inlined]
+          [4] NegativeBinomial
+            @ ~/.julia/packages/Distributions/O5xl5/src/univariate/discrete/negativebinomial.jl:41 [inlined]
+          [5] NegativeBinomial2
+            @ ./none:5 [inlined]
+          [6] _broadcast_getindex_evalf
+            @ ./broadcast.jl:670 [inlined]
+          [7] _broadcast_getindex
+            @ ./broadcast.jl:643 [inlined]
+          [8] _getindex
+            @ ./broadcast.jl:666 [inlined]
+          [9] _broadcast_getindex
+            @ ./broadcast.jl:642 [inlined]
+         [10] getindex
+            @ ./broadcast.jl:597 [inlined]
+         [11] macro expansion
+            @ ~/.julia/packages/LazyArrays/z8CRn/src/lazybroadcasting.jl:111 [inlined]
+         [12] macro expansion
+            @ ./simdloop.jl:77 [inlined]
+         [13] _sum(f::typeof(identity), A::LazyArrays.BroadcastVector{Float64, typeof(Distributions.logpdf), Tuple{LazyArrays.BroadcastVector{Distributions.NegativeBinomial{Float64}, typeof(Main.FD_SANDBOX_6523126557097366755.NegativeBinomial2), Tuple{LazyArrays.BroadcastVector{Float64, typeof(exp), Tuple{LazyArrays.BroadcastVector{Float64, typeof(+), Tuple{Float64, LazyArrays.Applied{LazyArrays.MulStyle, typeof(*), Tuple{Matrix{Float64}, Vector{Float64}}}}}}}, Float64}}, Vector{Int64}}}, #unused#::Colon)
+            @ LazyArrays ~/.julia/packages/LazyArrays/z8CRn/src/lazybroadcasting.jl:110
+         [14] #_sum#740
+            @ ./reducedim.jl:893 [inlined]
+         [15] _sum
+            @ ./reducedim.jl:893 [inlined]
+         [16] #sum#738
+            @ ./reducedim.jl:889 [inlined]
+         [17] sum
+            @ ./reducedim.jl:889 [inlined]
+         [18] _logpdf(dist::Distributions.Product{Distributions.Discrete, Distributions.NegativeBinomial{Float64}, LazyArrays.BroadcastVector{Distributions.NegativeBinomial{Float64}, typeof(Main.FD_SANDBOX_6523126557097366755.NegativeBinomial2), Tuple{LazyArrays.BroadcastVector{Float64, typeof(exp), Tuple{LazyArrays.BroadcastVector{Float64, typeof(+), Tuple{Float64, LazyArrays.Applied{LazyArrays.MulStyle, typeof(*), Tuple{Matrix{Float64}, Vector{Float64}}}}}}}, Float64}}}, x::Vector{Int64})
+            @ DistributionsAD ~/.julia/packages/DistributionsAD/bxCGB/src/DistributionsAD.jl:95
+         [19] logpdf
+            @ ~/.julia/packages/Distributions/O5xl5/src/common.jl:226 [inlined]
+         [20] loglikelihood
+            @ ~/.julia/packages/Distributions/O5xl5/src/common.jl:427 [inlined]
+         [21] observe
+            @ ~/.julia/packages/DynamicPPL/fNArW/src/context_implementations.jl:233 [inlined]
+         [22] observe
+            @ ~/.julia/packages/DynamicPPL/fNArW/src/context_implementations.jl:230 [inlined]
+         [23] tilde_observe
+            @ ~/.julia/packages/DynamicPPL/fNArW/src/context_implementations.jl:137 [inlined]
+         [24] tilde_observe
+            @ ~/.julia/packages/DynamicPPL/fNArW/src/context_implementations.jl:135 [inlined]
+         [25] tilde_observe
+            @ ~/.julia/packages/DynamicPPL/fNArW/src/context_implementations.jl:130 [inlined]
+         [26] tilde_observe!!
+            @ ~/.julia/packages/DynamicPPL/fNArW/src/context_implementations.jl:183 [inlined]
+         [27] tilde_observe!!
+            @ ~/.julia/packages/DynamicPPL/fNArW/src/context_implementations.jl:170 [inlined]
+         [28] macro expansion
+            @ ~/.julia/packages/DynamicPPL/fNArW/src/compiler.jl:531 [inlined]
+         [29] negbinreg(__model__::DynamicPPL.Model{typeof(Main.FD_SANDBOX_6523126557097366755.negbinreg), (:X, :y, :predictors), (:predictors,), (), Tuple{Matrix{Float64}, Vector{Int64}, Int64}, Tuple{Int64}, DynamicPPL.DefaultContext}, __varinfo__::DynamicPPL.ThreadSafeVarInfo{DynamicPPL.UntypedVarInfo{DynamicPPL.Metadata{Dict{AbstractPPL.VarName, Int64}, Vector{Distributions.Distribution}, Vector{AbstractPPL.VarName}, Vector{Real}, Vector{Set{DynamicPPL.Selector}}}, Float64}, Vector{Base.RefValue{Float64}}}, __context__::DynamicPPL.SamplingContext{DynamicPPL.SampleFromUniform, DynamicPPL.DefaultContext, Random._GLOBAL_RNG}, X::Matrix{Float64}, y::Vector{Int64}, predictors::Int64)
+            @ Main.FD_SANDBOX_6523126557097366755 ./none:9
+         [30] macro expansion
+            @ ~/.julia/packages/DynamicPPL/fNArW/src/model.jl:498 [inlined]
+         [31] _evaluate!!
+            @ ~/.julia/packages/DynamicPPL/fNArW/src/model.jl:481 [inlined]
+         [32] evaluate_threadsafe!!(model::DynamicPPL.Model{typeof(Main.FD_SANDBOX_6523126557097366755.negbinreg), (:X, :y, :predictors), (:predictors,), (), Tuple{Matrix{Float64}, Vector{Int64}, Int64}, Tuple{Int64}, DynamicPPL.DefaultContext}, varinfo::DynamicPPL.UntypedVarInfo{DynamicPPL.Metadata{Dict{AbstractPPL.VarName, Int64}, Vector{Distributions.Distribution}, Vector{AbstractPPL.VarName}, Vector{Real}, Vector{Set{DynamicPPL.Selector}}}, Float64}, context::DynamicPPL.SamplingContext{DynamicPPL.SampleFromUniform, DynamicPPL.DefaultContext, Random._GLOBAL_RNG})
+            @ DynamicPPL ~/.julia/packages/DynamicPPL/fNArW/src/model.jl:472
+         [33] evaluate!!
+            @ ~/.julia/packages/DynamicPPL/fNArW/src/model.jl:407 [inlined]
+         [34] evaluate!!
+            @ ~/.julia/packages/DynamicPPL/fNArW/src/model.jl:420 [inlined]
+         [35] Model
+            @ ~/.julia/packages/DynamicPPL/fNArW/src/model.jl:380 [inlined]
+         [36] VarInfo
+            @ ~/.julia/packages/DynamicPPL/fNArW/src/varinfo.jl:127 [inlined]
+         [37] VarInfo
+            @ ~/.julia/packages/DynamicPPL/fNArW/src/varinfo.jl:126 [inlined]
+         [38] step(rng::Random._GLOBAL_RNG, model::DynamicPPL.Model{typeof(Main.FD_SANDBOX_6523126557097366755.negbinreg), (:X, :y, :predictors), (:predictors,), (), Tuple{Matrix{Float64}, Vector{Int64}, Int64}, Tuple{Int64}, DynamicPPL.DefaultContext}, spl::DynamicPPL.Sampler{Turing.Inference.NUTS{Turing.Essential.ForwardDiffAD{40}, (), AdvancedHMC.DiagEuclideanMetric}}; resume_from::Nothing, kwargs::Base.Pairs{Symbol, Int64, Tuple{Symbol}, NamedTuple{(:nadapts,), Tuple{Int64}}})
+            @ DynamicPPL ~/.julia/packages/DynamicPPL/fNArW/src/sampler.jl:81
+         [39] macro expansion
+            @ ~/.julia/packages/AbstractMCMC/6aLyN/src/sample.jl:124 [inlined]
+         [40] macro expansion
+            @ ~/.julia/packages/AbstractMCMC/6aLyN/src/logging.jl:15 [inlined]
+         [41] mcmcsample(rng::Random._GLOBAL_RNG, model::DynamicPPL.Model{typeof(Main.FD_SANDBOX_6523126557097366755.negbinreg), (:X, :y, :predictors), (:predictors,), (), Tuple{Matrix{Float64}, Vector{Int64}, Int64}, Tuple{Int64}, DynamicPPL.DefaultContext}, sampler::DynamicPPL.Sampler{Turing.Inference.NUTS{Turing.Essential.ForwardDiffAD{40}, (), AdvancedHMC.DiagEuclideanMetric}}, N::Int64; progress::Bool, progressname::String, callback::Nothing, discard_initial::Int64, thinning::Int64, chain_type::Type, kwargs::Base.Pairs{Symbol, Int64, Tuple{Symbol}, NamedTuple{(:nadapts,), Tuple{Int64}}})
+            @ AbstractMCMC ~/.julia/packages/AbstractMCMC/6aLyN/src/sample.jl:115
+         [42] #sample#42
+            @ ~/.julia/packages/Turing/rl6ku/src/inference/hmc.jl:133 [inlined]
+         [43] macro expansion
+            @ ~/.julia/packages/AbstractMCMC/6aLyN/src/sample.jl:353 [inlined]
+         [44] (::AbstractMCMC.var"#39#52"{DynamicPPL.Sampler{Turing.Inference.NUTS{Turing.Essential.ForwardDiffAD{40}, (), AdvancedHMC.DiagEuclideanMetric}}, DynamicPPL.Model{typeof(Main.FD_SANDBOX_6523126557097366755.negbinreg), (:X, :y, :predictors), (:predictors,), (), Tuple{Matrix{Float64}, Vector{Int64}, Int64}, Tuple{Int64}, DynamicPPL.DefaultContext}, Random._GLOBAL_RNG, UnitRange{Int64}, Bool, Base.Pairs{Symbol, UnionAll, Tuple{Symbol}, NamedTuple{(:chain_type,), Tuple{UnionAll}}}, Int64, Vector{Any}, Vector{UInt64}})()
+            @ AbstractMCMC ./threadingconstructs.jl:178
+    Stacktrace:
+     [1] sync_end(c::Channel{Any})
+       @ Base ./task.jl:381
+     [2] macro expansion
+       @ ./task.jl:400 [inlined]
+     [3] macro expansion
+       @ ~/.julia/packages/AbstractMCMC/6aLyN/src/sample.jl:342 [inlined]
+     [4] (::AbstractMCMC.var"#38#51"{Bool, Base.Pairs{Symbol, UnionAll, Tuple{Symbol}, NamedTuple{(:chain_type,), Tuple{UnionAll}}}, Int64, Int64, Vector{Any}, Vector{UInt64}, Vector{DynamicPPL.Sampler{Turing.Inference.NUTS{Turing.Essential.ForwardDiffAD{40}, (), AdvancedHMC.DiagEuclideanMetric}}}, Vector{DynamicPPL.Model{typeof(Main.FD_SANDBOX_6523126557097366755.negbinreg), (:X, :y, :predictors), (:predictors,), (), Tuple{Matrix{Float64}, Vector{Int64}, Int64}, Tuple{Int64}, DynamicPPL.DefaultContext}}, Vector{Random._GLOBAL_RNG}, Int64, Int64})()
+       @ AbstractMCMC ./task.jl:429

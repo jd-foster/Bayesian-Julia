@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+    <loc>https://storopoli.github.io/Bayesian-Julia/pages/12_epi_models/index.html</loc>
+    <lastmod>2022-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://storopoli.github.io/Bayesian-Julia/pages/3_prob_dist/index.html</loc>
+    <lastmod>2022-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://storopoli.github.io/Bayesian-Julia/404/index.html</loc>
+    <lastmod>2022-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://storopoli.github.io/Bayesian-Julia/pages/11_Turing_tricks/index.html</loc>
+    <lastmod>2022-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://storopoli.github.io/Bayesian-Julia/pages/8_count_reg/index.html</loc>
+    <lastmod>2022-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://storopoli.github.io/Bayesian-Julia/pages/6_linear_reg/index.html</loc>
+    <lastmod>2022-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://storopoli.github.io/Bayesian-Julia/pages/1_why_Julia/index.html</loc>
+    <lastmod>2022-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://storopoli.github.io/Bayesian-Julia/index.html</loc>
+    <lastmod>2022-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://storopoli.github.io/Bayesian-Julia/pages/4_Turing/index.html</loc>
+    <lastmod>2022-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://storopoli.github.io/Bayesian-Julia/pages/10_multilevel_models/index.html</loc>
+    <lastmod>2022-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://storopoli.github.io/Bayesian-Julia/pages/9_robust_reg/index.html</loc>
+    <lastmod>2022-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://storopoli.github.io/Bayesian-Julia/pages/7_logistic_reg/index.html</loc>
+    <lastmod>2022-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://storopoli.github.io/Bayesian-Julia/pages/5_MCMC/index.html</loc>
+    <lastmod>2022-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://storopoli.github.io/Bayesian-Julia/pages/2_bayes_stats/index.html</loc>
+    <lastmod>2022-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+</urlset>
